@@ -18,13 +18,13 @@ public class SpringGsonExampleApplicationTests {
 
 	@Before
 	public void setup(){
-		product =new  Product("123","Demo Product",123);
+		product =new  Product(123,"Demo Product",123);
 	}
 
 	@Test
 	public void simpleGsonTest() throws JSONException {
 		String expected = "{\n" +
-				"\"code\": \"123\",\n" +
+				"\"code\": 123,\n" +
 				"\"name\": \"Demo Product\",\n" +
 				"\"price\": 123\n" +
 				"}";
